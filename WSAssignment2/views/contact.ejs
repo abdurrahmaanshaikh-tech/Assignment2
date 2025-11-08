@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<header>
+  <h1>Contact Form</h1>
+  <p>I’d love to hear from you! Fill out the form below and I’ll get back to you soon.</p>
+</header>
+
+<form action="mailto:abdurrahmaan.shaikh@ontariotechu.net?subject=Feedback from website"
+      enctype="text/plain" method="post" name="FeedbackForm">
+  <p><label for="FName">Full Name: </label>
+  <input type="text" name="FName" size="40" placeholder="Enter your Full Name" required></p>
+
+  <p><label for="Email">Email: </label>
+  <input type="email" name="Email" size="40" placeholder="Enter your email address" required></p>
+
+  <p><label for="comments">Comments: </label><br>
+  <textarea name="comments" cols="60" rows="8"></textarea></p>
+
+  <p><input type="checkbox" name="maillist">
+  <label for="maillist">Put me in your e-list</label></p>
+
+  <p><input type="reset" value="Reset">
+  <input type="submit" value="Submit"></p>
+</form>
+
+<%- include('partials/footer') %>
